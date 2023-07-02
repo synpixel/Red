@@ -7,7 +7,7 @@
 	"files": [
 		"lib"
 	],
-	"repository": "https://github.com/synpixel/Red",
+	"repository": "git://github.com/synpixel/Red.git",
 	"homepage": "https://redblox.dev/",
 	"license": "MIT",
 	"publishConfig": {
