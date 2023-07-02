@@ -1,10 +1,29 @@
 {
-  "dependencies": {
-    "vitepress": "^1.0.0-alpha.72",
-    "vue": "^3.2.47"
-  },
-  "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs"
-  }
+	"name": "@rbxts/red",
+	"description": "A wrapper around jackdotink's [Red](https://github.com/jackdotink/Red)",
+	"version": "1.0.0",
+	"main": "lib/init.luau",
+	"typings": "lib/index.d.ts",
+	"files": [
+		"lib"
+	],
+	"repository": "https://github.com/synpixel/Red",
+	"homepage": "https://redblox.dev/",
+	"license": "MIT",
+	"scripts": {
+		"build": "rbxtsc",
+		"watch": "rbxtsc -w"
+	},
+	"devDependencies": {
+		"@rbxts/compiler-types": "2.1.0-types.1",
+		"@rbxts/types": "^1.0.703",
+		"@typescript-eslint/eslint-plugin": "^5.60.1",
+		"@typescript-eslint/parser": "^5.60.1",
+		"eslint": "^8.44.0",
+		"eslint-config-prettier": "^8.8.0",
+		"eslint-plugin-prettier": "^4.2.1",
+		"eslint-plugin-roblox-ts": "^0.0.35",
+		"prettier": "^2.8.8",
+		"typescript": "^5.1.6"
+	}
 }

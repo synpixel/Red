@@ -1,5 +1,6 @@
 {
 	"name": "Red",
+	"globIgnorePaths": ["**/package.json", "**/tsconfig.json"],
 	"tree": {
 		"$path": "lib"
 	}
