@@ -13,10 +13,6 @@
 	"publishConfig": {
 		"access": "public"
 	},
-	"scripts": {
-		"build": "rbxtsc",
-		"watch": "rbxtsc -w"
-	},
 	"devDependencies": {
 		"@rbxts/compiler-types": "2.1.0-types.1",
 		"@rbxts/types": "^1.0.703",
