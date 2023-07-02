@@ -10,6 +10,9 @@
 	"repository": "https://github.com/synpixel/Red",
 	"homepage": "https://redblox.dev/",
 	"license": "MIT",
+	"publishConfig": {
+		"access": "public"
+	},
 	"scripts": {
 		"build": "rbxtsc",
 		"watch": "rbxtsc -w"
