@@ -1,5 +1,5 @@
 {
-	"name": "@rbxts/red",
+	"name": "@rbxts/red-ts",
 	"description": "A wrapper around jackdotink's [Red](https://github.com/jackdotink/Red)",
 	"version": "1.0.0",
 	"main": "lib/init.luau",
