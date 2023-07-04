@@ -1,33 +1,25 @@
-<div align="center">
-	<img src="docs/public/logo.png" alt="Red" />
-</div>
+# @rbxts/red
 
-<hr />
+roblox-ts wrapper around [Red](https://github.com/jackdotink/Red).
 
-# What is Red?
+## Example
 
-Red is a networking library for Roblox that combines a good structure with blazing fast performance to provide a good developer experience. Red is suitable for any project, from tiny experiments to large-scale games.
+### Server
 
-## Structure
+```ts
+import { Server, Clock } from "@rbxts/red";
 
-Red allows the developer to use whatever structure they'd like. However, Red also has it's own recommended structure that enforces good practices and creates more performant code.
+const Net = Server("Net");
 
-## Performance
+Clock(5, () => Net.FireAll("HelloWorld"));
+```
 
-Unlike many other networking libraries, which very simply wrap around Remote Events and Functions, Red uses a single Remote Event and identifiers to pack remote events and functions into a single call. This event packing allows Red to use much less bandwidth than normal Remote Event usage. This saved bandwidth comes at a minimal performance cost, and is often faster than other libraries because of it's simplicity.
+### Client
 
-## Developer Experience
+```ts
+import { Client } from "@rbxts/red";
 
-Red uses Luau, and is internally typed completely in strict Luau. This creates full autocomplete and type checking for the developer. The Red API is very simple and easy to use, and it fits seamlessly into any project. Red is boilerplate free, there is no setup process.
+const Net = Client("Net");
 
-## Documentation
-
-Documentation can be found [here](https://redblox.dev).
-
-## Contributing
-
-Please read our [contribution guide](CONTRIBUTING.md).
-
-## License
-
-Red is licensed under the [MIT License](LICENSE).
+Net.On("HelloWorld", () => print("Hello, world!"));
+```
