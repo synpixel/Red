@@ -1,8 +1,8 @@
 {
 	"name": "@rbxts/red",
 	"description": "A wrapper around jackdotink's [Red](https://github.com/jackdotink/Red)",
-	"version": "1.0.1",
-	"main": "lib/init.luau",
+	"version": "1.0.2",
+	"main": "lib/init.lua",
 	"typings": "lib/index.d.ts",
 	"files": [
 		"lib"
